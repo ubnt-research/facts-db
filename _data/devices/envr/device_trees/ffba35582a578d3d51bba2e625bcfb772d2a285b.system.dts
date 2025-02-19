@@ -1,0 +1,124 @@
+/dts-v1/;
+
+/ {
+
+	cavium,bdk {
+
+		firmware-layout {
+			#address-cells = <0x01>;
+			#size-cells = <0x01>;
+
+			tim0@00010000 {
+				type = "firmware";
+				root-tim-object = "scp_bl1.bin";
+				compression = "none";
+				description = "tim0";
+				reg = <0x10000 0x4000>;
+			};
+
+			rom-script0.fw@00020000 {
+				type = "firmware";
+				compression = "none";
+				description = "rom-script0.fw";
+				reg = <0x20000 0x20000>;
+			};
+
+			scp_bl1.bin@00040000 {
+				type = "firmware";
+				compression = "none";
+				arch = "mips32";
+				os = "arm-trusted-firmware";
+				description = "scp_bl1.bin";
+				reg = <0x40000 0x60000>;
+			};
+
+			mcp_bl1.bin@000A0000 {
+				type = "firmware";
+				compression = "none";
+				arch = "mips32";
+				os = "arm-trusted-firmware";
+				description = "mcp_bl1.bin";
+				reg = <0xa0000 0x30000>;
+			};
+
+			ecp_bl1.bin@000D0000 {
+				type = "firmware";
+				compression = "none";
+				arch = "mips32";
+				os = "arm-trusted-firmware";
+				description = "ecp_bl1.bin";
+				reg = <0xd0000 0x30000>;
+			};
+
+			init.bin@00100000 {
+				type = "firmware";
+				compression = "none";
+				arch = "arm64";
+				os = "arm-trusted-firmware";
+				description = "init.bin";
+				reg = <0x100000 0x360000>;
+			};
+
+			gserm-cn10xx.fw@00460000 {
+				type = "firmware";
+				compression = "none";
+				arch = "custom";
+				os = "arm-trusted-firmware";
+				description = "gserm-cn10xx.fw";
+				reg = <0x460000 0x30000>;
+			};
+
+			gserp-cn10xx.fw@00490000 {
+				type = "firmware";
+				compression = "none";
+				arch = "custom";
+				os = "arm-trusted-firmware";
+				description = "gserp-cn10xx.fw";
+				reg = <0x490000 0x30000>;
+			};
+
+			bl2.bin@004C0000 {
+				type = "firmware";
+				compression = "none";
+				arch = "arm64";
+				os = "arm-trusted-firmware";
+				description = "bl2.bin";
+				reg = <0x4c0000 0x80000>;
+			};
+
+			bl31.bin@00540000 {
+				type = "firmware";
+				compression = "none";
+				arch = "arm64";
+				os = "arm-trusted-firmware";
+				description = "bl31.bin";
+				reg = <0x540000 0x120000>;
+			};
+
+			u-boot-nodtb.bin@00660000 {
+				type = "firmware";
+				compression = "none";
+				arch = "arm64";
+				os = "arm-trusted-firmware";
+				description = "u-boot-nodtb.bin";
+				reg = <0x660000 0x150000>;
+			};
+
+			npc_mkex-cn10xx.fw@007b0000 {
+				type = "firmware";
+				compression = "none";
+				description = "npc_mkex-cn10xx.fw";
+				reg = <0x7b0000 0x60000>;
+			};
+
+			tee.bin@00810000 {
+				type = "firmware";
+				compression = "none";
+				arch = "arm64";
+				os = "arm-trusted-firmware";
+				description = "tee.bin";
+				reg = <0x810000 0x250000>;
+			};
+		};
+	};
+};
