@@ -1,0 +1,20 @@
+---
+metadata:
+
+facets:
+  camera:
+    description:
+      A device that has a image sensor (or two in the case of some SKUs like the doorbell) and an optional audio sensor
+      that can capture a video stream to a NVR device.
+  ai_camera:
+    prerequisite:
+      - camera
+    description:
+      A device that in addition to the normal camera facet, is capable of running on device AI detection via means
+      of an onboard tensor unit (AI coprocessor)
+  switch:
+  bridge:
+  gateway:
+  cellular_gateway:
+    prerequisite:
+      - gateway

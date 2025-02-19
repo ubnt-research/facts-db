@@ -1,0 +1,53 @@
+---
+metadata:
+  credits:
+    - rickmark
+  roots:
+    devices:
+      sort: true
+devices:
+  AIO:
+    board:
+      name: UVC AI Dome
+      sysid: 0xa5a5
+      shortname: AIO
+      videosensor: 14
+      phycount: 1
+      bomnum: 10408
+      toplevelbomnum: 300-09103-02
+      mebomnum: 300-02102-05
+    facets:
+      - camera
+      - ai_camera
+    feature:
+      sdmmc: true
+      mic: true
+      line_in: false
+  G4O:
+    board:
+      name: UVC G4 Dome
+    facets:
+      - camera
+  AIT:
+    board:
+      name: UVC AI Turret
+    facets:
+      - camera
+      - ai_camera
+  AIP:
+    board:
+      name: UVC AI Pro
+    facets:
+      - camera
+      - ai_camera
+  AID:
+    board:
+      name: UVC AI DSLR
+      description:
+  G5P:
+    board:
+      name: UVC G5 Pro
+      sysid: 0xa598
+      bomnum: 4055
+      toplevelbomnum: 300-16777215-255
+      hwrev: 9
