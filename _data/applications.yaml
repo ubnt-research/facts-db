@@ -1,0 +1,23 @@
+---
+metadata:
+  credits:
+    - rickmark
+  roots:
+    - applications
+applications:
+  protect:
+    description:
+      A general purpose app for NVR or network video recorder to capture and analyze IP cameras from ubiquity
+  network:
+  access:
+
+  interspace:
+    description:
+      Used to map the physical space Ubiquity devices exist in
+  talk:
+  connect:
+    description:
+      Generic catch all for devices outside of any other app
+  uid-agent:
+    description:
+      The UID agent is an app that integrates user identities from the Ubiquity UID cloud service
