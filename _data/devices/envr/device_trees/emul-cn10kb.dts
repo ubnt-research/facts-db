@@ -1,0 +1,13 @@
+/dts-v1/;
+
+/ {
+
+	cavium,bdk {
+		EBF-BOOT-MENU-TIMEOUT = "0";
+		SCLK-FREQ-MAX = "1000";
+		DDR-SPEED = "2166";
+		EBF-CONFIG-ATF-TRACE-MODULES = "0";
+		EBF-CONFIG-ATF-TRACE-LEVEL = "0";
+		EBF-CONFIG-ATF-TIMESTAMP = "0";
+	};
+};
