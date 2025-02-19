@@ -1,0 +1,67 @@
+
+services:
+  "/etc/rc.d/rc.sysinit":
+    on:
+      - sysvinit
+  "/sbin/getty":
+    parameters: -L ttyS0 115200 vt100
+    console: ttyS0
+    on:
+      - askfirst
+  "/sbin/init":
+    on:
+      - restart
+  "/usr/bin/ubnt_migrate":
+    on:
+      - wait
+  "/bin/ifconfig":
+
+  "/usr/etc/rc.d/rc":
+  "/usr/bin/check_hw_issues.sh":
+  "/usr/bin/crash-report":
+  "/usr/bin/global_settings.sh":
+
+  "/etc/rc.d/rc":
+    on:
+    - shutdown
+  "/etc/rc.d/rc.stop":
+    on:
+    - shutdown
+  "/bin/umount":
+    parameters: -a -r
+    on:
+      - shutdown
+  "/bin/infctld":
+    on:
+      - respawn
+  "/bin/syslogd":
+    parameters: -S -s 0 -C1024 -n
+  "/bin/klogd":
+    parameters: -n
+  "/bin/lighttpd":
+    parameters: -D -f /etc/lighttpd.conf
+  "/bin/net_monitor.sh":
+  "/bin/ubnt_avclient":
+  "/bin/ubnt_ctlserver":
+  "/bin/ubnt_ispserver":
+    parameters: -d=0
+  "/bin/ubnt_smart_motion":
+  "/bin/ubnt_streamer":
+  "/bin/ubnt_networkd":
+  "/bin/ubnt_osd":
+  "/bin/ubnt_sounds_leds":
+  "/bin/ubnt_talkback":
+    parameters: -a
+  "/bin/ubnt_smart_detect":
+  "/bin/ubnt_uahubl2":
+  "/usr/sbin/sensor-monitor":
+  "/usr/sbin/theta-vsync-loss-monitor":
+  "/bin/start-stop-daemon-launcher":
+    parameters: /bin/ubnt_lcm_gui
+  "/usr/local/bin/dsp_monitor_service":
+  "/bin/crond":
+    parameters: -l5 -f
+  "/bin/ubnt_watchdog":
+  "/bin/ubnt_reportd":
+  "/bin/udhcpc":
+    parameters: --retries 9 -f -x hostname:ai-theta -i eth0 -S -s /bin/udhcpc_cb.sh -v
