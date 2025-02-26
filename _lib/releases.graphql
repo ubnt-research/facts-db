@@ -1,0 +1,727 @@
+scalar Date
+scalar UserID
+
+enum RestrictionType {
+    ALPHA
+    BETA
+    OTHER
+}
+
+enum NotificationType {
+    ACCEPTED_ANSWER_REMOVED
+    ANSWER_ACCEPTED
+    ANSWER_COMMENTED
+    ANSWER_DOWNVOTED
+    ANSWER_DOWNVOTE_REMOVED
+    ANSWER_REPORTED
+    ANSWER_UPVOTED
+    ANSWER_UPVOTE_REMOVED
+    MENTIONED_IN_ANSWER
+    MENTIONED_IN_COMMENT_TO_ANSWER
+    MENTIONED_IN_COMMENT_TO_QUESTION
+    MENTIONED_IN_COMMENT_TO_RELEASE
+    MENTIONED_IN_COMMENT_TO_STORY
+    MENTIONED_IN_QUESTION
+    MENTIONED_IN_RELEASE
+    MENTIONED_IN_STORY
+    MESSAGE_SENT
+    QUESTION_ANSWERED
+    QUESTION_ANSWER_UPDATED
+    QUESTION_COMMENTED
+    QUESTION_CREATED
+    QUESTION_DOWNVOTED
+    QUESTION_DOWNVOTE_REMOVED
+    QUESTION_REPORTED
+    QUESTION_UPDATED
+    QUESTION_UPVOTED
+    QUESTION_UPVOTE_REMOVED
+    RELEASE_COMMENTED
+    RELEASE_COMMENT_REPORTED
+    RELEASE_COMMENT_UPDATED
+    RELEASE_COMMENT_UPVOTED
+    RELEASE_CREATED
+    RELEASE_DOWNVOTED
+    RELEASE_DOWNVOTE_REMOVED
+    RELEASE_UPVOTED
+    RELEASE_UPVOTE_REMOVED
+    STORY_CHANGES_REQUESTED
+    STORY_COMMENTED
+    STORY_COMMENT_REPORTED
+    STORY_COMMENT_UPDATED
+    STORY_COMMENT_UPVOTED
+    STORY_CREATED
+    STORY_DOWNVOTED
+    STORY_DOWNVOTE_REMOVED
+    STORY_PUBLIC_UPDATED
+    STORY_PUBLISHED
+    STORY_REJECTED
+    STORY_REPORTED
+    STORY_SUBMITTED
+    STORY_UPDATED
+    STORY_UPVOTED
+    STORY_UPVOTE_REMOVED
+}
+
+enum UserBanType {
+    DAY
+    PERMANENT
+    REMOVED
+    WARNING
+    WEEK
+}
+
+enum EntityType {
+    ANSWER
+    COMMENT
+    QUESTION
+    RELEASE
+    STORY
+}
+
+enum StoryStatus {
+    PUBLISHED
+}
+
+enum RelatedLinkType {
+    EXTERNAL
+    QUESTION
+    RELEASE
+    STORY
+}
+
+enum TagMatchType {
+    AND
+    OR
+}
+
+enum CommentsSortBy {
+    LATEST
+    OLDEST
+    SCORE
+    SEARCH_RANK
+}
+
+enum FeatureEntityType {
+    QUESTION
+    RELEASE
+    STORY
+}
+
+enum SearchEntityType {
+    Question
+    Answer
+    Story
+    Comment
+}
+
+enum ReleasesSortDirection {
+    ASC
+    DESC
+}
+
+enum CustomReleasesSortBy {
+    LATEST
+    ACTIVITY
+    FOLLOWING
+    VIEWS
+}
+
+enum ReleaseStage {
+    GA
+    RC
+    T
+}
+
+enum ReleaseType {
+    SW
+    FW
+}
+
+enum ReleasesSortBy {
+    LATEST
+    ACTIVITY
+    FOLLOWING
+    VIEWS
+}
+enum ReleaseStatus {
+    PUBLISHED
+}
+
+enum ContentType {
+    ATTACHMENTS
+    IMAGES
+    TEXT
+    VIDEO
+}
+
+enum Category {
+    ACCESS
+    AMPLIFI
+    CONNECT
+    DRIVE
+    GENERAL
+    IDENTITY
+    INNERSPACE
+    MOBILITY
+    NETWORK
+    NEW_TO_UNIFI
+    PROTECT
+    TALK
+    UISP
+    UISP_WIRED
+    UISP_WIRELESS
+    UNIFI_PLAY
+}
+
+interface Content {
+    id: ID!
+    type: ContentType!
+}
+
+type QuestionStats {
+    answers: Int
+    comments: Int
+    score: Int
+    views: Int
+    reports: Int
+}
+
+type RelatedLink {
+    externalLink: ExternalLink
+    question: Question
+    release: Release
+    story: Story
+    type: RelatedLinkType
+}
+
+type AnswerStats {
+    comments: Int
+    reports: Int
+    score: Int
+}
+
+type StoryStats {
+    score: Int
+    comments: Int
+    images: Int
+    reports: Int
+    videos: Int
+    views: Int
+}
+
+type Answers {
+    items: [Answer!]!
+}
+
+type AttachmentContent {
+    filename: String!
+    isPublic: Boolean
+    url: String!
+}
+
+type Question {
+    acceptedAnswer: ID
+    alphas: [String!]!
+    answer: Answer
+    answers: Answers
+    assignee: User
+    author: User
+    betas: [String!]!
+    content: [Content!]!
+    createdAt: Date!
+    editor: User
+    entityType: EntityType
+    hasUiEngagement: Boolean
+    id: ID!
+    isFeatured: Boolean!
+    isLocked: Boolean!
+    isOfficial: Boolean!
+    lastActivityAt: Date!
+    logfiles: [AttachmentContent!]!
+    originEntity: QuestionOriginEntity
+    pinned: Answer
+    pinnedAnswer: ID
+    publishedAs: User
+    relatedLinks: [RelatedLink!]!
+    slug: String!
+    solution: Answer
+    stats: QuestionStats
+    tags: [String!]!
+    title: String!
+    trackerLink: String
+    updatedAt: Date
+    userStatus: UserStatus
+    comments(offset: Int, limit: Int): Comments!
+}
+
+type RestrictionCategory {
+    key: Int!
+    title: String!
+}
+
+type RestrictionStats {
+    questions: Int!
+    releases: Int!
+}
+
+type ReleaseGroup {
+    author: User
+    createdAt: Date!
+    editor: User
+    id: ID!
+    releaseMappingUrls: [String!]
+    restrictions: [String!]
+    tags: [String!]!
+    title: String!
+    type: ReleaseType!
+    updatedAt: Date
+}
+
+type Restriction {
+    category: RestrictionCategory
+    group: Int
+    id: String!
+    sort: Int
+    stats: RestrictionStats
+    title: String!
+    type: RestrictionType!
+}
+
+type BanItem {
+    bannedUserId: String!
+    bannedUserUsername: String!
+    createdAt: Date!
+    createdById: String!
+    createdByUsername: String!
+    expiresAt: Date
+    reason: String!
+}
+
+type BanResponse {
+    items: [BanItem!]!
+    totalCount: Int!
+}
+
+type LogFile {
+    filename: String!
+    url: String!
+}
+
+type DateStat {
+    date: Date
+    value: Int
+}
+
+type MainFeedPostResponse {
+    category: Category!
+    items: [Question!]!
+}
+
+type GdprGetUserResponse {
+    rawData: String!
+}
+
+type Conversation {
+    id: ID!
+    preview: Content
+    createdAt: Date!
+    lastActivityAt: Date
+    users: [User!]!
+    userStatus: UserStatus
+    messages(limit: Int): Messages!
+}
+
+type Conversations {
+    items: [Conversation!]!
+    cursorInfo: CursorInfo!
+}
+
+type ActivityStat {
+    perDay: [DateStat!]!
+    total: Int
+}
+
+type ConversationCount {
+    count: Int!
+}
+
+type ActivityStats {
+    answers: ActivityStat
+    comments: ActivityStat
+    messages: ActivityStat
+    pageviews: ActivityStat
+    questions: ActivityStat
+    releases: ActivityStat
+    responseTime: ActivityStat
+    solutionTime: ActivityStat
+    stories: ActivityStat
+    users: ActivityStat
+}
+
+type UserAvatar {
+    color: String!
+    content: String!
+    image: String
+}
+
+type Answer {
+    author: User
+    comments: Comments
+    connectedQuestion: Question
+    content: [Content!]!
+    createdAt: Date!
+    editor: User
+    entityType: EntityType
+    id: ID!
+    parentEntity: Question
+    publishedAs: User
+    stats: AnswerStats
+    updatedAt: Date
+    userStatus: UserStatus
+}
+
+type Notification {
+    id: ID!
+    type: NotificationType!
+    createdAt: Date!
+    question: Question
+    isRead: Boolean!
+    answer: Answer
+    release: Release
+    comment: Comment
+    story: Story
+    publishedAs: User
+    voter: User
+}
+
+type PublicReleaseGroup {
+    id: ID!
+    title: String!
+}
+
+type Comments {
+    items: [Comment!]!
+    pageInfo: PageInfo!
+    totalCount: Int
+}
+
+type PageInfo {
+    limit: Int!
+    offset: Int!
+}
+
+type SpamBlockItem {
+    blockedUserId: String!
+    blockedUserUsername: String!
+    createdAt: Date!
+    expiresAt: Date!
+    reason: String!
+}
+
+type SpamBlockResponse {
+    items: [SpamBlockItem!]!
+    totalCount: Int!
+}
+
+type ReleaseStats {
+    comments: Int!
+    views: Int!
+}
+
+type User {
+    id: UserID!
+    username: String!
+    title: String
+    slug: String!
+    avatar: UserAvatar!
+    isEmployee: Boolean!
+    registeredAt: String!
+    lastOnlineAt: String!
+    groups: [String!]
+    showOfficialBadge: Boolean!
+    canBeMentioned: Boolean!
+    canViewProfile: Boolean!
+    canStartConversationWith: [String!]
+    stats: UserStats!
+    author: User!
+}
+
+type Story {
+    entityType: EntityType!
+    comments(
+        offset: Int
+        limit: Int
+        targetId: ID
+        targetCreatedAfter: Date
+        reverse: Boolean
+    ): Comments!
+    content: Content
+    updatedAt: Date
+    title: String!
+    status: StoryStatus!
+    editor: User
+    author: User!
+    id: ID!
+    slug: String!
+    stats: StoryStats!
+    publishedAs: User
+    moderationStatusMessage: String
+}
+
+type UserActivityStats {
+    answers: Int!
+    comments: Int!
+    messages: Int!
+    questions: Int!
+    releases: Int!
+    responseTime: Int!
+    solutionTime: Int!
+    stories: Int!
+    user: User
+}
+
+type UserStatus {
+    isFollowing: Boolean
+    lastViewedAt: String
+    reported: Boolean
+    vote: Float
+}
+
+type Messages {
+    items: [Message!]!
+    cursorInfo: CursorInfo!
+}
+
+type WebsiteStats {
+    monthlyActiveUsers: Int!
+    onlineUsers: Int!
+}
+
+type TextContent implements Content {
+    id: ID!
+    type: ContentType!
+    content: String!
+}
+
+type NotificationsCount {
+    count: Int!
+    hasNewNotifications: Boolean
+}
+type ImageContent {
+    caption: String
+    src: String!
+}
+type ImagesContentRow {
+    images: [ImageContent!]!
+}
+
+type ImagesContent implements Content {
+    id: ID!
+    type: ContentType!
+    grid: [ImagesContentRow!]!
+}
+
+type AttachmentsContent implements Content {
+    id: ID!
+    type: ContentType!
+    files: [AttachmentContent!]!
+}
+
+type BlacklistedTerm {
+    author: User
+    comment: String
+    createdAt: Date!
+    editor: User
+    term: String!
+    updatedAt: Date
+}
+
+type Questions {
+    items: [Question!]!
+    pageInfo: PageInfo!
+    totalCount: Int!
+}
+
+type VideoContent implements Content {
+    id: ID!
+    type: ContentType!
+    src: String!
+}
+
+type Report {
+    author: User
+    createdAt: Date!
+    reason: String!
+}
+
+type UserStats {
+    questions: Int
+    answers: Int
+    solutions: Int
+    comments: Int
+    stories: Int
+    score: Float
+}
+
+type UserPermissionsLog {
+    alphas: [String!]
+    author: User
+    createdAt: Date!
+    groups: [String!]
+    id: String!
+    user: User
+}
+
+type Checksums {
+    md5: String
+    sha256: String
+}
+
+type UserBanHistory {
+    author: User
+    createdAt: Date!
+    expiresAt: Date
+    messageToUser: String
+    reason: String!
+    type: UserBanType!
+}
+
+type Stories {
+    items: [Story!]!
+    pageInfo: PageInfo!
+    totalCount: Int!
+}
+
+type Link {
+    url: String!
+    title: String
+    checksums: Checksums
+}
+
+type Release {
+    id: ID!
+    content: Content
+    slug: String!
+    links: [Link!]!
+    groupId: String!
+    type: ReleaseType!
+    title: String!
+    version: String!
+    stage: ReleaseStage!
+    tags: [String!]!
+    betas: [String!]!
+    editor: User
+    alphas: [String!]!
+    isFeatured: Boolean!
+    isLocked: Boolean!
+    hasUiEngagement: Boolean!
+    stats: ReleaseStats!
+    createdAt: Date!
+    lastActivityAt: Date!
+    updatedAt: Date
+    userStatus: UserStatus!
+    author: User!
+    publishedAs: User
+    comments(
+        offset: Int
+        limit: Int
+        targetId: ID
+        targetCreatedAfter: Date
+        sortBy: CommentsSortBy
+    ): Comments!
+    newFeatures: Content
+    improvements: Content
+    bugfixes: Content
+    knownIssues: Content
+    importantNotes: Content
+    instructions: Content
+    entityType: EntityType!
+    status: ReleaseStatus!
+}
+
+type Releases {
+    totalCount: Int
+    items: [Release!]
+    pageInfo: PageInfo!
+}
+
+type CursorInfo {
+    start: Int
+    end: Int
+    limit: Int
+    hasMore: Boolean
+}
+
+type Notifications {
+    items: [Notification!]!
+    cursorInfo: CursorInfo
+}
+
+type CommentStats {
+    reports: Int
+    score: Int
+}
+
+type Message {
+    id: ID!
+    conversationId: String
+    content: Content
+    author: User
+    createdAt: Date!
+}
+
+type Location {
+    lng: Float
+    lat: Float
+    address: String
+    countryShortName: String
+}
+
+type ExternalLink {
+    title: String!
+    url: String!
+}
+type Comment {
+    id: ID!
+    content: Content!
+    stats: CommentStats!
+    editor: User
+    author: User!
+    createdAt: Date!
+    publishedAs: User
+    updatedAt: Date
+    userStatus: UserStatus
+    connectedQuestion: Question
+    parentEntity: CommentParentEntity
+}
+
+union QuestionOriginEntity = Answer | Comment
+
+union CommentParentEntity = Release | Story
+
+type Query {
+    releases(
+        limit: Int,
+        offset: Int,
+        searchTerm: String,
+        sortBy: ReleasesSortBy,
+        sortDirection: ReleasesSortDirection,
+        stage: ReleaseStage,
+        statuses: [ReleaseStatus!],
+        tagMatchType: TagMatchType,
+        tags: [String!],
+        betas: [String!],
+        alphas: [String!],
+        filterTags: [String!],
+        filterEATags: [String!],
+        filterAlphaTags: [String!],
+        type: ReleaseType,
+        featuredOnly: Boolean,
+        nonFeaturedOnly: Boolean,
+        userIsFollowing: Boolean,
+    ): Releases
+}
+
+schema {
+    query: Query
+}

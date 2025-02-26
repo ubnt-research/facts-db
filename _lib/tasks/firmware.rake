@@ -1,12 +1,26 @@
 require "selenium-webdriver"
-require 'graphql'
+require "graphql/client"
+require "graphql/client/http"
 
 RELEASES_URL = 'https://community.ui.com/RELEASES'
-GRAPHQL_ENDPOINT = 'https://community.svc.ui.com/'
+GRAPHQL_ENDPOINT = 'https://community.svc.ui.com/graphql'
+MAX_LIMIT_SIZE = 100
 
-FirmwarePage = Struct.new(:title, :url)
+FirmwarePage = Struct.new(:id, :title, :slug, :version, :stage)
 
-ReleasesSchema = GraphQL::Schema.from_definition(File.join(File.dirname(__FILE__), '../ui_community.graphql'))
+
+# Star Wars API example wrapper
+module UbiquityGraphAPI
+  # Configure GraphQL endpoint using the basic HTTP network adapter.
+  HTTP = GraphQL::Client::HTTP.new(GRAPHQL_ENDPOINT)
+
+  # Fetch latest schema on init, this will make a network request
+  Schema = GraphQL::Schema.from_definition('_lib/releases.graphql')
+
+  Client = GraphQL::Client.new(schema: Schema, execute: HTTP)
+
+end
+
 
 ALL_TAGS =  %w[unifi-routing-switching unifi-wireless unifi-cloud-gateway unifi-switching wifiman unifi-design-center unifi-protect unifi-access unifi-talk unifi-connect site-manager uid unifi-mobility unifi-drive innerspace uisp-app uisp-mobile aircontrol isp-design-center airmax airmax-aircube airfiber-ltu 60GHz wave edgemax ufiber unms solar uisp-power amplifi general new-to-unifi unifi-play]
 
@@ -14,6 +28,160 @@ ALL_TAGS =  %w[unifi-routing-switching unifi-wireless unifi-cloud-gateway unifi-
 desc 'Reload releases from GraphQL'
 task :firmware do
 
+
+  RELEASES_QUERY = UbiquityGraphAPI::Client.parse <<~GRAPHQL
+query (
+  $limit: Int
+  $offset: Int
+  $searchTerm: String
+  $sortBy: ReleasesSortBy
+  $sortDirection: ReleasesSortDirection
+  $stage: ReleaseStage
+  $statuses: [ReleaseStatus!]
+  $tagMatchType: TagMatchType
+  $tags: [String!]
+  $betas: [String!]
+  $alphas: [String!]
+  $filterTags: [String!]
+  $filterEATags: [String!]
+  $filterAlphaTags: [String!]
+  $type: ReleaseType
+  $featuredOnly: Boolean
+  $nonFeaturedOnly: Boolean
+  $userIsFollowing: Boolean
+) {
+  releases(
+    limit: $limit
+    offset: $offset
+    searchTerm: $searchTerm
+    sortBy: $sortBy
+    sortDirection: $sortDirection
+    stage: $stage
+    statuses: $statuses
+    tagMatchType: $tagMatchType
+    tags: $tags
+    betas: $betas
+    alphas: $alphas
+    filterTags: $filterTags
+    filterEATags: $filterEATags
+    filterAlphaTags: $filterAlphaTags
+    type: $type
+    featuredOnly: $featuredOnly
+    nonFeaturedOnly: $nonFeaturedOnly
+    userIsFollowing: $userIsFollowing
+  ) {
+    items {
+      id
+      slug
+      type
+      title
+      version
+      stage
+      tags
+      betas
+      alphas
+      isFeatured
+      isLocked
+      hasUiEngagement
+      stats {
+        comments
+        views
+        __typename
+      }
+      createdAt
+      lastActivityAt
+      updatedAt
+      userStatus {
+        isFollowing
+        lastViewedAt
+        reported
+        vote
+        __typename
+      }
+      author {
+        id
+        username
+        title
+        slug
+        avatar {
+          color
+          content
+          image
+          __typename
+        }
+        isEmployee
+        registeredAt
+        lastOnlineAt
+        groups
+        showOfficialBadge
+        canBeMentioned
+        canViewProfile
+        canStartConversationWith
+        __typename
+        stats {
+          questions
+          answers
+          solutions
+          comments
+          stories
+          score
+          __typename
+        }
+        __typename
+      }
+      publishedAs {
+        id
+        username
+        title
+        slug
+        avatar {
+          color
+          content
+          image
+          __typename
+        }
+        isEmployee
+        registeredAt
+        lastOnlineAt
+        groups
+        showOfficialBadge
+        canBeMentioned
+        canViewProfile
+        canStartConversationWith
+        __typename
+      }
+      __typename
+    }
+    pageInfo {
+      limit
+      offset
+      __typename
+    }
+    totalCount
+    __typename
+  }
+}
+
+  GRAPHQL
+
+  results = []
+
+  10.times do |i|
+    page = UbiquityGraphAPI::Client.query(RELEASES_QUERY, variables: {
+      limit: MAX_LIMIT_SIZE,
+      offset: i *  MAX_LIMIT_SIZE,
+      tags: nil
+    })
+    page.data.to_h['releases']['items'].each do |release|
+      result = FirmwarePage.new(release['id'], release['title'], release['slug'], release['version'], release['stage'])
+      results  << result
+    end
+  end
+
+
+  open(File.join( File.dirname(__FILE__), '../../tmp/firmwares.yaml'),  'w') do |f|
+    f.write results.to_yaml
+  end
 end
 
 desc 'Reload firmware files from UI'

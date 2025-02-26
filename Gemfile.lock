@@ -1,13 +1,29 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    activesupport (8.0.1)
+      base64
+      benchmark (>= 0.3)
+      bigdecimal
+      concurrent-ruby (~> 1.0, >= 1.3.1)
+      connection_pool (>= 2.2.5)
+      drb
+      i18n (>= 1.6, < 2)
+      logger (>= 1.4.2)
+      minitest (>= 5.1)
+      securerandom (>= 0.3)
+      tzinfo (~> 2.0, >= 2.0.5)
+      uri (>= 0.13.1)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     base64 (0.2.0)
+    benchmark (0.4.0)
     bigdecimal (3.1.9)
     colorator (1.1.0)
     concurrent-ruby (1.3.5)
+    connection_pool (2.5.0)
     csv (3.3.2)
+    drb (2.2.1)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
@@ -47,6 +63,9 @@ GEM
       base64
       fiber-storage
       logger
+    graphql-client (0.25.0)
+      activesupport (>= 3.0)
+      graphql (>= 1.13.0)
     http_parser.rb (0.8.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
@@ -103,6 +122,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     logger (1.6.6)
     mercenary (0.4.0)
+    minitest (5.25.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (6.0.1)
@@ -147,6 +167,7 @@ GEM
       google-protobuf (~> 4.29)
     sass-embedded (1.85.1-x86_64-linux-musl)
       google-protobuf (~> 4.29)
+    securerandom (0.4.1)
     selenium-webdriver (4.29.1)
       base64 (~> 0.2)
       logger (~> 1.4)
@@ -155,7 +176,10 @@ GEM
       websocket (~> 1.0)
     terminal-table (3.0.2)
       unicode-display_width (>= 1.1.1, < 3)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
     unicode-display_width (2.6.0)
+    uri (1.0.3)
     webrick (1.9.1)
     websocket (1.2.11)
 
@@ -186,7 +210,7 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  graphql
+  graphql-client
   jekyll
   jekyll-theme-chirpy
   logger
