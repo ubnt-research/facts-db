@@ -8,4 +8,7 @@ gem 'jekyll-theme-chirpy'
 
 group :development do
   gem 'rake'
+  gem 'selenium-webdriver'
+  gem 'graphql'
 end
+
