@@ -1,27 +1,15 @@
 ---
-- https://apps.apple.com/app/unifi/id1057750338
-- https://apps.apple.com/us/app/unifi-identity-endpoint/id6450954172
-- https://download.uid.ui.com/?app=DESKTOP-IDENTITY-STANDARD-MACOS
-- https://apps.apple.com/us/app/unifi-access/id1578429007
-- https://play.google.com/store/search?q=identity%20endpoint&c=apps&hl=en_US
-- https://download.uid.ui.com/?app=DESKTOP-IDENTITY-STANDARD-WINDOWS
-- https://download.uid.ui.com/?app=DESKTOP-IDENTITY-STANDARD-WINDOWS-MSI
 - https://dl.ui.com/unifi/firmware/ECS24P/7.2.108.16428/EAS.mvac5_7.2.108+16428.250218.1830.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/0d8a-UXG-4.1.10-cac9e258-f5ba-47ed-9203-91a2591ed6f2.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/48aa-UXGB-4.1.10-6ae5ef5c-9876-47e4-af47-0f305cf84ee6.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/3166-UXGA6AA-4.1.10-ea5016c6-4911-4b51-86f1-4f91356ce96d.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/c9a0-UXGPROV2-4.1.10-667675fc-f680-4100-8552-25dd104b833c.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/a160-UXGENT-4.1.10-2eaa09bf-d769-424e-93e3-1db1d167c0df.bin
-- https://play.google.com/store/apps/details?id=com.ubnt.easyunifi&hl=en
-- https://play.google.com/store/apps/details?id=com.ui.access.app
-- https://apps.apple.com/app/unifi-protect/id1392492235
 - https://dl.ui.com/firmwares/uisps/1.10.1/ESX.1.10.1.bix
 - https://dl.ui.com/firmwares/uisps/1.10.1/UISPS.rtl838x.v1.10.1.bix
 - https://dl.ui.com/firmwares/uisps/1.10.1/UISPS.rtl930x.v1.10.1.bix
 - https://dl.ui.com/firmwares/uisps/1.10.1/UISPS.act5.v1.10.1.e6d23bb.250117.1136.bin
 - https://fw-download.ubnt.com/data/UDA/8eb4-android-2.12.21-4f44ad56-af01-48c2-9601-7d33929c5c36.zip
-- https://download.uid.ui.com/?app=UI-DESKTOP-WINDOWS
-- https://play.google.com/store/apps/details?id=com.ubnt.usurvey
 - https://dl.ubnt.com/firmwares/uispr/5.3.1/UISPR.alpinev2.v5.3.1.108b660.250210.0735.bin
 - https://dl.ubnt.com/firmwares/uispr/5.3.1/UISPR.alpinev2.recovery.v5.3.1.108b660.250210.0816.bin
 - https://dl.ubnt.com/firmwares/uispr/5.3.1/UISPR.mt7621.v5.3.1.108b660.250210.0736.bin
@@ -46,14 +34,10 @@
 - https://www.ui.com/downloads/airfiber-fw-internal/LTU/v2.4.0/afltu.amesoc3.v2.4.0-RC.00013.250115.0901-squashfs.bin
 - https://www.ui.com/downloads/airfiber-fw-internal/LTU/v2.4.0/af5xhd.amesoc3.v2.4.0-RC.00013.250115.0901-squashfs.bin
 - https://fw-download.ubnt.com/data/GBE/9aa5-airmax-1.5.0-bc548f6c-ae2e-466d-a95c-103c7a0465fa.bin
-- 'https://play.google.com/store/search?q=identity%20endpoint&c=apps&hl=en_US '
-- 'https://play.google.com/store/apps/details?id=com.ui.uid.client&hl=en_US&pli=1 '
 - https://fw-download.ubnt.com/data/ua-g3-pro/e082-android-1.1.24-a2e22961-ae63-4fd9-b100-3893f82f5613.zip
 - https://fw-download.ubnt.com/data/ua-portal/8a0a-android-1.5.30-4ebb4ca5-4f0e-4590-a5b8-1d2cf71c4a5a.zip
-- 'https://apps.apple.com/us/app/unifi-identity-endpoint/id6450954172 '
 - https://dl.ui.com/unifi/firmware/ULTE/7.0.96.16064/IL.qca956x_7.0.96+16064.241217.2207.bin
 - https://fw-download.ubnt.com/data/ua-g2-pro/3e50-android-1.8.25-49efb322-f555-4ed9-b5c5-4e2d71d62ff2.zip
-- https://apps.apple.com/us/app/identity-enterprise/id1498088361
 - https://dl.ui.com/unifi/firmware/UAP6MP/7.0.103.16014/BZ.ipq50xx_7.0.103+16014.250115.1613.bin
 - https://dl.ui.com/unifi/firmware/U7PRO/7.0.103.16014/BZ.ipq53xx_7.0.103+16014.250115.0914.bin
 - https://dl.ui.com/unifi/firmware/G7LR/7.0.103.16014/BZ2.ipq53xx_7.0.103+16014.250115.0915.bin
@@ -61,7 +45,6 @@
 - https://fw-download.ubnt.com/data/umr/7c6b-openwrt-1.13.7-6a7faf61-cfae-4585-b88f-2e508d473bc5.bin
 - https://fw-download.ubnt.com/data/umr-industrial/dc34-openwrt-1.13.7-dcf16d75-15ac-459a-a795-c193b802f6da.bin
 - https://fw-download.ubnt.com/data/umr-ultra/b6ac-openwrt-1.13.7-79146794-8d6a-4b3b-a00d-086e8db94c54.bin
-- https://apps.apple.com/us/app/unifi-protect/id1392492235
 - https://fw-download.ubnt.com/data/ua-intercom-viewer/270e-android-1.3.16-8ee795e6-3bb5-4724-89e5-7430f97886f5.zip
 - https://fw-download.ubnt.com/data/unifi-firmware/313c-UXG-4.1.8-b6e33d0c-a469-411e-910f-797c3b025e44.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/9ad2-UXGB-4.1.8-1938dc21-8fc5-4707-a9b2-a36a39c4b239.bin
@@ -81,10 +64,8 @@
 - https://dl.ui.com/unifi/firmware/UAP6MP/7.0.100.16006/BZ.ipq50xx_7.0.100+16006.250106.1652.bin
 - https://dl.ui.com/unifi/firmware/U7PRO/7.0.100.16006/BZ.ipq53xx_7.0.100+16006.250106.1649.bin
 - https://dl.ui.com/unifi/firmware/G7LR/7.0.100.16006/BZ2.ipq53xx_7.0.100+16006.250106.1648.bin
-- https://apps.apple.com/cz/app/ubiquiti-wifiman/id1385561119
 - https://dl.ui.com/unifi/firmware/USM25G8/2.1.5.958/USM25G8.esp32_2.1.5+958.241212.1827.bin
 - https://dl.ui.com/unifi/firmware/USPH24P/7.1.33.16032/US3.rtl93xx_7.1.33+16032.241122.0020.bin
-- https://download.uid.ui.com/?app=UI-DESKTOP-MACOS
 - https://fw-download.ubnt.com/data/unifi-drive/e217-UNASPRO-4.1.11-aed6201b-da9b-459f-bb84-fc77848e11ee.bin
 - https://fw-download.ubnt.com/data/AFi-ALN-R/496c-AmpliFi-4.0.6-5ad96990-7134-471f-9fa0-b09fd79739db.bin
 - https://fw-download.ubnt.com/data/AFi-ALN-P/369a-AmpliFi-4.0.6-0d78a713-ab51-4f2a-ba4f-465a0b684ecc.bin
@@ -101,7 +82,6 @@
 - https://fw-download.ubnt.com/data/unifi-dream/0563-UDMPROMAX-4.1.13-74cc9735-425b-490e-b9e3-6efef99d3f96.bin
 - https://fw-download.ubnt.com/data/unifi-dream/6ace-UDR-4.1.13-23f43dca-efce-479e-890d-834ec442826e.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/c798-UDB-1.3.1-5e5f2bb6-c4ce-4143-97f4-880a9380c776.bin
-- https://apps.apple.com/app/unifi-access/id1578429007
 - https://dl.ui.com/unifi/9.0.108-u598f2io2a/UniFi-installer.exe
 - https://dl.ui.com/unifi/9.0.108-u598f2io2a/UniFi-Network-Server.dmg
 - https://dl.ui.com/unifi/9.0.108-u598f2io2a/unifi_sysvinit_all.deb
@@ -114,7 +94,6 @@
 - https://fw-download.ubnt.com/data/unifi-cloudkey/bd80-UCKENT-4.1.11-6b4c89e5-85fe-43e0-bab7-5b991d38561e.bin
 - https://fw-download.ubnt.com/data/unifi-nvr/c09c-UNVR-4.1.11-8b633647-c737-4d5d-86f6-38bc557fef00.bin
 - https://fw-download.ubnt.com/data/unifi-nvr/e853-UNVRPRO-4.1.11-c0f05621-9331-4d08-a84d-153a551d4b2b.bin
-- https://play.google.com/store/search?q=unifi%20verify&c=apps&hl=en_US
 - https://dl.ui.com/unifi/firmware/UAP6MP/7.0.95.15999/BZ.ipq50xx_7.0.95+15999.241217.0921.bin
 - https://dl.ui.com/unifi/firmware/U7PRO/7.0.95.15999/BZ.ipq53xx_7.0.95+15999.241217.1604.bin
 - https://dl.ui.com/unifi/firmware/G7LR/7.0.95.15999/BZ2.ipq53xx_7.0.95+15999.241217.1604.bin
@@ -130,7 +109,6 @@
 - https://ui.com/downloads/firmwares/XN-fw/v6.3.16/XW.v6.3.16.33429.241004.1620.bin
 - https://ui.com/downloads/firmwares/XN-fw/v6.3.16/TI.v6.3.16.33429.241004.1512.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/d14d-UACCMPOEAF-6.5.87-4ff2cf20-8ac4-453e-8114-033a8f76e404.bin
-- https://testflight.apple.com/join/CCG4Os70
 - https://fw-download.ubnt.com/data/unifi-firmware/68d1-UAPA697-7.0.85-fa1ca354-f0f6-4053-8534-3e07688e998a.bin
 - https://fw-download.ubnt.com/data/unifi-drive/132c-UNASPRO-4.1.9-6de2338a-4671-438a-83db-ff0a7e6bad05.bin
 - https://fw-download.ubnt.com/data/umr/1610-openwrt-1.13.3-13afe22d-0459-4d33-8efd-bd2b6b3a18ac.bin
@@ -165,7 +143,6 @@
 - https://dl.ui.com/firmwares/edgemax/EdgePower/v1.12.0/EP.v1.12.0.d8f694.241016.0928.bin
 - https://dl.ui.com/firmwares/edgemax/EdgePower/v1.12.0/EPX.v1.12.0.31b140.241016.0934.bin
 - https://dl.ui.com/firmwares/edgemax/EdgePower/v1.12.0/ubnt-mib.zip
-- https://apps.apple.com/us/app/ubiquiti-wifiman/id1385561119
 - https://dl.ui.com/unifi/8.6.9-0f45j609pu/UniFi-installer.exe
 - https://dl.ui.com/unifi/8.6.9-0f45j609pu/UniFi-Network-Server.dmg
 - https://dl.ui.com/unifi/8.6.9-0f45j609pu/unifi_sysvinit_all.deb
@@ -179,9 +156,6 @@
 - https://fw-download.ubnt.com/data/umr-ultra/4556-openwrt-1.12.2-3ce5ec73-8518-4de1-a93f-e983baba2a0b.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/f36a-UDB-1.2.0-ff3f252c-4e00-46ca-982b-f3ff428d81e9.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/06ab-UACCMPOEAF-6.5.85-3023e8c4-8c24-4b51-bfe6-0eba6b148127.bin
-- 'https://apps.apple.com/us/app/unifi-verify/id1499320261 '
-- 'https://play.google.com/store/search?q=unifi%20verify&c=apps&hl=en_US '
-- https://play.google.com/store/apps/details?id=com.ubnt.usurvey&pcampaignid=web_share
 - https://ui.com/downloads/firmwares/airfiber60/v1.3.0/XR.ipq807x.v1.3.0.4fef326f.241016.0510.bin
 - https://ui.com/downloads/firmwares/airfiber60/v1.3.0/ui-mib.zip
 - https://fw-download.ubnt.com/data/unifi-dream/4e7e-UDMENT-4.0.21-7c783fdb-97cb-44aa-8212-f0af5accb55b.bin
@@ -244,8 +218,6 @@
 - https://fw-download.ubnt.com/data/unifi-dream/7576-UDMENT-4.0.20-3fa6f5b8-8568-4901-8ffe-6b7f3b97948d.bin
 - https://fw-download.ubnt.com/data/unifi-nvr/fba6-ENVR-4.1.2-2e80c789-f120-43a9-915e-e1e1ebef934d.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/f206-UBBXG-1.2.0-94d4a895-edd6-4de0-9039-152ff248428d.bin
-- https://apps.apple.com/app/id1555432925
-- https://play.google.com/store/apps/details?id=com.ui.unifi.connect.app
 - https://fw-download.ubnt.com/data/ua-g2-pro/77ac-android-1.6.28-cc632778-b8a2-4e18-8cb3-5e6bb1da85e2.zip
 - https://fw-download.ubnt.com/data/ua-portal/7bb4-android-1.3.22-376715de-3f0a-4962-b17e-ec7c3f2b52d6.zip
 - https://fw-download.ubnt.com/data/umr/bb2f-openwrt-1.12.1-67f8bc3d-ad78-4f49-a999-ce7260649377.bin
@@ -258,7 +230,6 @@
 - https://fw-download.ubnt.com/data/UDA-LITE/39e4-openwrt-3.12.9-0-5d6b3268-aafc-4442-b898-72b284f978de.bin
 - https://fw-download.ubnt.com/data/UA-G2-MINI/b498-openwrt-3.12.9-0-a8b5777b-9d38-4dc2-88f3-46c845396434.bin
 - https://dl.ui.com/firmwares/uispp/1.1.2/UISPP.v1.1.2.b1ade9.240909.0954.bin
-- https://play.google.com/store/apps/details?id=com.ui.uid.client&hl=en_US&pli=1
 - https://dl.ui.com/unifi/8.4.62-i3q2j125cz/UniFi-installer.exe
 - https://dl.ui.com/unifi/8.4.62-i3q2j125cz/UniFi-Network-Server.dmg
 - https://dl.ui.com/unifi/8.4.62-i3q2j125cz/unifi_sysvinit_all.deb
@@ -319,8 +290,6 @@
 - https://dl.ui.com/firmwares/edgemax/EdgeSwitch/v1.10.3/ESGH.v1.10.3.5739963.stk
 - https://dl.ui.com/firmwares/edgemax/EdgeSwitch/v1.10.3/ESWH.v1.10.3-lite.5739964.stk
 - https://dl.ui.com/firmwares/edgemax/EdgeSwitch/v1.10.3/ESGH.v1.10.3-lite.5739965.stk
-- https://play.google.com/store/apps/details?id=com.ui.uid.authenticator&hl=en_US
-- https://apps.apple.com/us/app/unifi-verify/id1499320261
 - https://fw-download.ubnt.com/data/unifi-dream/a290-UDMENT-4.0.16-c7d78a9b-1785-4f9d-a7db-a3682c6ccd31.bin
 - https://fw-download.ubnt.com/data/ua-g2-pro/299e-android-1.5.40-c48b17fa-1b9b-47ef-935c-076867b358b7.zip
 - https://fw-download.ubnt.com/data/ua-portal/0936-android-1.2.34-86d16fb1-54ac-41ed-93d6-f98e7263a65e.zip
@@ -333,8 +302,6 @@
 - https://fw-download.ubnt.com/data/unifi-firmware/df08-UXG-4.0.6-06411ffe-c56b-48c8-b48a-df6a125a932c.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/ee30-UXGB-4.0.6-52b5ec0b-1543-4778-9dd2-63a916be9f97.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/a86d-UXGPROV2-4.0.6-8ace892e-7f35-4837-abd2-6bbcb25ab57a.bin
-- https://play.google.com/store/apps/details?id=com.ui.access.app&hl=en_US&pli=1
-- https://apps.apple.com/ua/app/unifi-access/id1578429007
 - https://dl.ui.com/unifi/firmware/UCI/1.3.6.356/US.mxl277_1.3.6+356.20240424.1256.bin
 - https://dl.ui.com/unifi/firmware/USMINI/2.0.9.842/USMINI.multi_2.0.9+842.240520.1800.bin
 - https://dl.ui.com/unifi/8.3.32-896f48ed11/UniFi-installer.exe
@@ -350,13 +317,9 @@
 - https://ui.com/downloads/firmwares/LTU/v2.3.4/afltu.amesoc3.v2.3.4.00007.240613.1106-squashfs.bin
 - https://ui.com/downloads/firmwares/LTU/v2.3.4/af5xhd.amesoc3.v2.3.4.00007.240613.1106-squashfs.bin
 - https://fw-download.ubnt.com/data/unifi-dream/a194-UDR-4.0.6-2ed189c5-4664-446d-a0a3-e531313ae0a2.bin
-- https://play.google.com/store/apps/details?id=com.ui.uid.standard&hl=en_US&pli=1
 - https://fw-download.ubnt.com/data/unifi-dream/afbd-UDW-4.0.6-b5637ff7-c23d-4d4f-bafd-b56b2b4b6cfd.bin
 - https://fw-download.ubnt.com/data/unifi-dream/23d4-UDRULT-4.0.6-6e731e36-82f4-4d4b-9037-352bff48f72b.bin
 - https://fw-download.ubnt.com/data/unifi-dream/a1e2-UCGMAX-4.0.6-fa70a349-1a8c-43fa-bee7-730eaff545e9.bin
-- https://apps.apple.com/us/app/identity-enterprise/id1498088361?platform=iphone
-- " https://play.google.com/store/apps/details?id=com.ui.access.app"
-- https://play.google.com/store/apps/details?id=com.ui.uid.client&hl=en_US&gl=US&pli=1
 - https://fw-download.ubnt.com/data/unifi-dream/052c-UDM-4.0.6-e88df76f-7a79-4a7e-bb06-1ca5a6bea5f5.bin
 - https://fw-download.ubnt.com/data/unifi-dream/98b0-UDMPRO-4.0.6-ae773b9d-ed4e-4a98-b853-948710384e2e.bin
 - https://fw-download.ubnt.com/data/unifi-dream/14ae-UDMPROSE-4.0.6-3ea4735d-1684-449f-adfc-24fa83ca5271.bin
@@ -375,7 +338,6 @@
 - https://ui.com/downloads/firmwares/wave/v3.3.1/GMP.ipq806x.v3.3.1.5158dcb5.240617.0743.bin
 - https://ui.com/downloads/firmwares/wave/v3.3.1/ui-mib.zip
 - https://fw-download.ubnt.com/data/umr/a989-openwrt-1.11.5-5a1b0458-c311-4517-b5ec-1bfe0d976d2a.bin
-- https://play.google.com/store/apps/details?id=com.ui.access.app&hl=en_US
 - https://dl.ui.com/unifi/firmware/UAP6MP/7.0.59.15729/BZ.ipq50xx_7.0.59+15729.240607.1759.bin
 - https://dl.ui.com/unifi/firmware/U7PRO/7.0.59.15729/BZ.ipq53xx_7.0.59+15729.240607.1207.bin
 - https://dl.ui.com/unifi/firmware/G7LR/7.0.59.15729/BZ2.ipq53xx_7.0.59+15729.240607.1207.bin
@@ -390,11 +352,9 @@
 - https://ui.com/downloads/firmwares/XC-fw/v8.7.13/2XC.v8.7.13.47729.240606.1143.bin
 - https://ui.com/downloads/firmwares/XC-fw/v8.7.13/2WA.v8.7.13.47729.240606.1143.bin
 - https://fw-download.ubnt.com/data/UA-Ultra/33a6-ESP32-1.3.6-5e1f8603-fdf0-4a0a-b72a-86b457d4c941.bin
-- https://play.google.com/store/apps/details?id=com.ui.uid.standard&hl=en_US
 - https://fw-download.ubnt.com/data/unifi-firmware/fde1-UXG-3.2.17-e94784e9-5d7a-46b4-94a2-7f7c83c73d3c.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/9ab1-UXGB-3.2.17-a29908cc-befe-4d1a-88a6-b1949a15ac90.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/55f6-UXGPROV2-3.2.17-b945c2ba-6c4b-4c55-9ef9-db281e38e5fc.bin
-- https://apps.apple.com/us/app/unifi-identity-license-free/id6450954172
 - https://dl.ui.com/unifi/firmware/U7PRO/7.0.56.15725/BZ.ipq53xx_7.0.56+15725.240523.1307.bin
 - https://dl.ui.com/unifi/8.2.93-1c329ecd26/UniFi-installer.exe
 - https://dl.ui.com/unifi/8.2.93-1c329ecd26/UniFi-Network-Server.dmg
@@ -411,7 +371,6 @@
 - https://ui.com/downloads/firmwares/XN-fw/v6.3.12/XM.v6.3.12.33412.240516.1856.bin
 - https://ui.com/downloads/firmwares/XW-fw/v6.3.12/XW.v6.3.12.33412.240516.1806.bin
 - https://ui.com/downloads/firmwares/XN-fw/v6.3.12/TI.v6.3.12.33412.240516.1715.bin
-- https://play.google.com/store/apps/details?id=com.ui.uid.standard&hl=en_US&gl=US&pli=1
 - https://dl.ui.com/unifi/firmware/UAP6MP/7.0.53.15666/BZ.ipq50xx_7.0.53+15666.240425.1544.bin
 - https://fw-download.ubnt.com/data/AFi-R/5bb0-AmpliFi-4.0.3-f0dd1694-f660-40d2-bb55-32886dcd245c.bin
 - https://fw-download.ubnt.com/data/AFi-P-HD/0a56-AmpliFi-4.0.3-c6c82266-9cc8-486d-9e7a-63b94c5608bf.bin
@@ -419,8 +378,6 @@
 - https://fw-download.ubnt.com/data/unifi-dream/7251-UDRULT-3.2.17-d8cb1645-18fe-441a-82c7-ce888b5888d1.bin
 - https://fw-download.ubnt.com/data/umr/c611-openwrt-1.10.12-286be06c-f145-4a62-86c6-b3b531e7bb07.bin
 - https://fw-download.ubnt.com/data/unifi-dream/947a-UX-3.2.9-cfac69c3-6c00-4f59-9f41-1745892e5508.bin
-- https://apps.apple.com/us/app/unifi-identity-license-free/id6450954172?platform=iphone
-- https://play.google.com/store/apps/details?id=com.ui.uid.standard&hl=en_US&gl=US
 - https://dl.ui.com/firmwares/uisps/1.8.1/UISPS.rtl838x.v1.8.1.bix
 - https://dl.ui.com/firmwares/uisps/1.8.1/UISPS.rtl930x.v1.8.1.bix
 - https://dl.ui.com/firmwares/uisps/1.8.1/UISPS.act5.v1.8.1.9299a73.240425.1035.bin
@@ -454,7 +411,6 @@
 - https://dl.ui.com/unifi/firmware/USPPDUP/7.0.50.15613/US.mt7628_7.0.50+15613.240328.2043.bin
 - https://dl.ui.com/unifi/firmware/USMULTUSW16POE/7.0.50.15613/US.MULT.USW_16_POE_7.0.50+15613.240329.0330.bin
 - https://dl.ui.com/unifi/firmware/USMULT/7.0.50.15613/US.MULT_7.0.50+15613.240329.0328.bin
-- https://apps.apple.com/ua/app/unifi-access/id1578429007?platform=iphone
 - https://dl.ubnt.com/firmwares/airfiber60_talyn/v1.1.2/AF60.v1.1.2.77d3bea1.240409.0834.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/126e-UBBXG-1.1.3-8022e5b5-a3c1-4aaa-be5c-1fd194843b9c.bin
 - https://ui.com/downloads/firmwares/wave/v3.3.0/MGMP.ipq807x.v3.3.0.744b7dde.240321.0923.bin
@@ -488,7 +444,6 @@
 - https://dl.ui.com/unifi/8.1.113/UniFi.unix.zip
 - https://dl.ui.com/unifi/8.1.113/unifi_sh_api
 - https://fw-download.ubnt.com/data/umr/3b3a-openwrt-1.10.3-291d10d7-d02f-4720-9c33-8c9e0a10ded3.bin
-- https://apps.apple.com/us/app/unifi-identity-enterprise/id1498088361?platform=iphone
 - https://ui.com/downloads/firmwares/LTU/v2.3.2/aflturocket.amesoc3.v2.3.2.00015.240130.0801-squashfs.bin
 - https://ui.com/downloads/firmwares/LTU/v2.3.2/afltu.amesoc3.v2.3.2.00015.240130.0801-squashfs.bin
 - https://ui.com/downloads/firmwares/LTU/v2.3.2/af5xhd.amesoc3.v2.3.2.00015.240130.0801-squashfs.bin
@@ -502,8 +457,6 @@
 - https://dl.ui.com/firmwares/uisps/1.8.0/UISPS.rtl930x.v1.8.0.bix
 - https://dl.ui.com/firmwares/uisps/1.8.0/UISPS.act5.v1.8.0.59fde89.240226.0916.bin
 - https://dl.ui.com/unifi/firmware/U7PRO/7.0.43.15570/BZ.ipq53xx_7.0.43+15570.240220.1123.bin
-- https://play.google.com/store/apps/details?id=com.ui.access.app&hl=en_US&gl=US
-- https://apps.apple.com/us/app/unifi-identity-enterprise/id1498088361
 - https://fw-download.ubnt.com/data/unifi-dream/4c63-UDRULT-3.2.12-16749bf9-d550-4db2-9c2c-2b9c2c8190d5.bin
 - https://dl.ui.com/unifi/firmware/USM8P/1.1.7.812/USM8P.esp32_1.1.7+812.231214.1500.bin
 - https://ui.com/downloads/firmwares/wave/v3.2.2/MGMP.ipq807x.v3.2.2.ad22c388.240125.1301.bin
@@ -521,7 +474,6 @@
 - https://fw-download.ubnt.com/data/unifi-dream/adc2-UDR-3.2.12-681f5939-f3b3-4b2a-b91c-4d25175bbcab.bin
 - https://fw-download.ubnt.com/data/unifi-nvr/7701-UNVR-3.2.12-445d1e3b-393d-4337-827c-f5240af15c6d.bin
 - https://fw-download.ubnt.com/data/unifi-nvr/f7d0-UNVRPRO-3.2.12-1403aca6-b1ea-4344-9464-9fd8eb5c86b8.bin
-- https://apps.apple.com/us/app/unifi-access/id1578429007?platform=iphone
 - https://fw-download.ubnt.com/data/unifi-dream/f728-UX-3.2.5-26f7cd7c-4c2a-4c68-8cad-b35777740d23.bin
 - https://dl.ui.com/unifi/firmware/U7PG2/6.6.65.15248/BZ.qca956x_6.6.65+15248.240130.2327.bin
 - https://dl.ui.com/unifi/firmware/U7HD/6.6.65.15248/BZ.ipq806x_6.6.65+15248.240130.2327.bin
@@ -534,7 +486,6 @@
 - https://dl.ui.com/firmwares/ufiber/v4.7.0/OLT.xgs.v4.7.0.29b18ab.240110.1150.bin
 - https://fw-download.ubnt.com/data/umr/86ce-openwrt-1.9.6-d8268859-7e7e-49d6-9fd8-eeb69d166049.bin
 - https://dl.ui.com/unifi/firmware/ULTE/6.6.57.15206/IL.qca956x_6.6.57+15206.231213.0649.bin
-- https://apps.apple.com/us/app/unifi-verify/id1499320261?platform=iphone
 - https://ui.com/downloads/firmwares/airfiber60/GP.v2.6.4/GP.v2.6.4.47605.240122.1002.bin
 - https://ui.com/downloads/firmwares/airfiber60/GP.v2.6.4/ui-mib.zip
 - https://dl.ui.com/unifi/8.0.28/UniFi-installer.exe
@@ -565,8 +516,8 @@
 - https://fw-download.ubnt.com/data/unifi-cloudkey/14e6-UCKG2-3.2.10-a105f5d3-a15c-47ed-b866-554980da3729.bin
 - https://fw-download.ubnt.com/data/unifi-cloudkey/85e4-UCKP-3.2.10-d601332b-e791-4aac-a36e-25927a0322db.bin
 - https://fw-download.ubnt.com/data/unifi-cloudkey/20b4-UCKENT-3.2.10-8a786db9-9947-4dd8-b913-a5faa847abaf.bin
-- 'https://api-gw.uid.alpha.ui.com/location/api/v1/public/fw/download/latest/?app=DESKTOP-IDENTITY-STANDARD-WINDOWS '
-- 'https://api-gw.uid.alpha.ui.com/location/api/v1/public/fw/download/latest/?app=DESKTOP-IDENTITY-STANDARD-MACOS '
+- https://api-gw.uid.alpha.ui.com/location/api/v1/public/fw/download/latest/?app=DESKTOP-IDENTITY-STANDARD-WINDOWS
+- https://api-gw.uid.alpha.ui.com/location/api/v1/public/fw/download/latest/?app=DESKTOP-IDENTITY-STANDARD-MACOS
 - https://dl.ui.com/unifi/firmware/U7PRO/7.0.35.15496/BZ.ipq53xx_7.0.35+15496.240109.0954.bin
 - https://api-gw.uid.alpha.ui.com/location/api/v1/public/fw/download/latest/?app=DESKTOP-IDENTITY-STANDARD-MACOS
 - https://dl.ui.com/unifi/firmware/UAP6MP/6.5.71.14794/BZ.ipq50xx_6.5.71+14794.240110.0638.bin
@@ -589,17 +540,10 @@
 - https://dl.ui.com/unifi/8.0.26/UniFi.unix.zip
 - https://dl.ui.com/unifi/8.0.26/unifi_sh_api
 - https://fw-download.ubnt.com/data/umr/b914-openwrt-1.8.3-80e6ff9a-37dc-4175-8558-6531f1e2b879.bin
-- https://play.google.com/store/search?q=UniFi%20Access&c=apps&hl=en_US&gl=US
-- https://play.google.com/store/search?q=unifi+verify&c=apps
-- https://play.google.com/store/apps/details?id=com.ui.access.app&pli=1
-- https://play.google.com/store/apps/details?id=com.ui.uid.standard
-- https://apps.apple.com/us/app/unifi-identity/id6450954172?platform=iphone
 - https://dl.ui.com/unifi/firmware/UAP6MP/6.6.58.15201/BZ.ipq50xx_6.6.58+15201.231221.0006.bin
-- https://testflight.apple.com/join/Pkd9a658
 - https://fw-download.ubnt.com/data/unifi-firmware/913a-UXG-3.1.16-685033a2-4241-435d-93ff-7ee182bf3f5f.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/e514-UXGPROV2-3.1.16-fea52089-8075-4ffb-9a4f-cb3546b7b0ff.bin
 - https://dl.ui.com/unifi/firmware/USLP24P/7.0.25.15392/US2.rtl93xx_7.0.25+15392.231205.1155.bin
-- https://play.google.com/store/search?q=UniFi%20Access&c=apps
 - https://dl.ui.com/unifi/firmware/UAP6MP/6.6.56.15200/BZ.ipq50xx_6.6.56+15200.231207.1909.bin
 - https://dl.ui.com/unifi/8.0.24-450f174e64/UniFi-installer.exe
 - https://dl.ui.com/unifi/8.0.24-450f174e64/UniFi-Network-Server.dmg
@@ -673,7 +617,6 @@
 - https://dl.ui.com/unifi/7.5.187-f57f5bf7ab/unifi-native_sysvinit.deb
 - https://dl.ui.com/unifi/7.5.187-f57f5bf7ab/UniFi.unix.zip
 - https://dl.ui.com/unifi/7.5.187-f57f5bf7ab/unifi_sh_api
-- https://forms.gle/nc9fqWb7WF8zd8VH9
 - https://dl.ui.com/firmwares/ufiber/UF-OLT.v4.6.0.5692.230809.0907.tar
 - https://dl.ui.com/firmwares/ufiber/OLT.xgs.v4.6.0.3c4f5ca.230828.1109.bin
 - https://dl.ui.com/firmwares/ufiber/UF-ONU.UF-LOCO.v4.6.0.2911-0d8.230803.1139.img
@@ -768,7 +711,6 @@
 - https://dl.ui.com/unifi/firmware/U7PG2/6.5.62.14788/BZ.qca956x_6.5.62+14788.230622.2048.bin
 - https://dl.ui.com/unifi/firmware/U7HD/6.5.62.14788/BZ.ipq806x_6.5.62+14788.230622.2048.bin
 - https://dl.ui.com/unifi/firmware/UAP6MP/6.5.62.14788/BZ.ipq50xx_6.5.62+14788.230622.2048.bin
-- https://play.google.com/apps/testing/com.ubnt.easyunifi
 - https://fw-download.ubnt.com/data/unifi-firmware/0b17-UXGPROV2-3.1.8-88787b9e2bb74c6698f0f9158721378a.bin
 - https://dl.ui.com/unifi/firmware/USMULTUS8/6.5.59.14777/US.MULT.US8_6.5.59+14777.230615.0259.bin
 - https://dl.ui.com/unifi/firmware/US24PL2/6.5.59.14777/US2.bcm5334x_6.5.59+14777.230615.0237.bin
@@ -833,7 +775,6 @@
 - https://dl.ui.com/unifi/7.4.156/UniFi.unix.zip
 - https://dl.ui.com/unifi/7.4.156/unifi_sh_api
 - https://fw-download.ubnt.com/data/AF60/9261-airmax-1.1.0-771ad073e1634a879d13b959b6c51777.bin
-- https://apps.apple.com/app/unifi-network/id1057750338
 - https://dl.ubnt.com/firmwares/XN-fw/v6.3.11/XM.v6.3.11.33396.230425.1742.bin
 - https://dl.ubnt.com/firmwares/XW-fw/v6.3.11/XW.v6.3.11.33396.230425.1644.bin
 - https://dl.ubnt.com/firmwares/XN-fw/v6.3.11/TI.v6.3.11.33396.230425.1547.bin
@@ -846,7 +787,6 @@
 - https://fw-download.ubnt.com/data/unifi-dream/2490-UDM-3.0.20-dd5b657a06e34c02bc59eafc99fdbf30.bin
 - https://fw-download.ubnt.com/data/unifi-dream/fb51-UDMPRO-3.0.20-c9d8c62c8a9a4ef18413881434197f30.bin
 - https://fw-download.ubnt.com/data/unifi-firmware/9c0a-UXGPROV2-3.0.7-5a0688f40c8d4f97bb3c3b675741fddb.bin
-- https://play.google.com/apps/testing/com.ui.access.app
 - https://ui.com/downloads/firmwares/airfiber60/GP.v2.6.3/GP.v2.6.3.47275.230411.1022.bin
 - https://ui.com/downloads/firmwares/airfiber60/GP.v2.6.3/ui-mib.zip
 - https://dl.ui.com/unifi/firmware/U7PG2/6.5.40.14623/BZ.qca956x_6.5.40+14623.230327.2023.bin
@@ -861,8 +801,6 @@
 - https://dl.ui.com/firmwares/edgemax/EdgePower/v1.11.0/Changelog.txt
 - https://dl.ui.com/firmwares/edgemax/EdgePower/v1.11.0/ubnt-mib.zip
 - https://dl.ui.com/unifi/firmware/ULTE/6.2.55.14140/IL.qca956x_6.2.55+14140.230203.1646.bin
-- https://apps.apple.com/app/ui/id1498088361
-- https://play.google.com/store/apps/details?id=com.ui.uid.client
 - https://fw-download.ubnt.com/data/unifi-dream/b31c-UDW-3.0.17-2ae172f079d1428e8467b6c059a82d9f.bin
 - https://dl.ui.com/firmwares/ufiber/UF-OLT.v4.4.9.5353.230302.1224.tar
 - https://dl.ui.com/firmwares/ufiber/UF-ONU.UF-NANOG.v4.4.9.2870-049.230301.1138.img
@@ -1442,7 +1380,6 @@
 - https://dl.ubnt.com/firmwares/XC-fw/v8.7.5/WA.v8.7.5.45783.210720.1004.bin
 - https://dl.ubnt.com/firmwares/XC-fw/v8.7.5/2XC.v8.7.5.45783.210720.1002.bin
 - https://dl.ubnt.com/firmwares/XC-fw/v8.7.5/2WA.v8.7.5.45783.210720.1004.bin
-- https://play.google.com/store/apps/details?id=com.ubnt.unifi.protect
 - https://ui.com/download/releases/firmware
 - https://fw-download.ubnt.com/data/udm/c3e8-udm-1.10.0-4946a702dc9d47fe9821052b1e26f0d0.bin
 - https://fw-download.ubnt.com/data/udm/210e-udmpro-1.10.0-6cc49445340f4896959ab66f6f1b8da3.bin
@@ -1464,7 +1401,6 @@
 - https://dl.ui.com/unifi/firmware/USMULT/5.64.8.13083/US.MULT_5.64.8+13083.210706.1113.bin
 - https://dl.ui.com/unifi/firmware/U7PG2/5.43.37.12727/BZ.qca956x_5.43.37+12727.210624.1546.bin
 - https://dl.ui.com/unifi/firmware/U7HD/5.43.37.12727/BZ.ipq806x_5.43.37+12727.210624.1546.bin
-- https://play.google.com/store/apps/details?id=com.ubnt.easyunifi&hl=en&gl=US
 - https://dl.ui.com/firmwares/edgemax/v2.0.9-hotfix.2/ER-e50.v2.0.9-hotfix.2.5402463.tar
 - https://dl.ui.com/firmwares/edgemax/v2.0.9-hotfix.2/ER-e100.v2.0.9-hotfix.2.5402463.tar
 - https://dl.ui.com/firmwares/edgemax/v2.0.9-hotfix.2/ER-e200.v2.0.9-hotfix.2.5402463.tar
@@ -1474,7 +1410,6 @@
 - https://dl.ui.com/unifi/6.2.26/UniFi.pkg
 - https://dl.ui.com/unifi/6.2.26/unifi_sysvinit_all.deb
 - https://dl.ui.com/unifi/6.2.26/unifi_sh_api
-- https://play.google.com/store/apps/details?id=com.ubnt.easyunifi
 - https://dl.ui.com/firmwares/edgemax/EdgePower/epx_v1.9.0/EPX.v1.9.0.1c72ff.210524.1411.bin
 - https://dl.ui.com/firmwares/edgemax/EdgePower/epx_v1.9.0/Changelog.txt
 - https://dl.ui.com/firmwares/edgemax/EdgePower/epx_v1.9.0/ubnt-mib.zip
@@ -2225,7 +2160,7 @@
 - https://dl.ui.com/unifi/firmware/UGW3/4.4.50.5272448/UGW3.v4.4.50.5272448.tar
 - https://dl.ui.com/unifi/firmware/UGW4/4.4.50.5272479/UGW4.v4.4.50.5272479.tar
 - https://dl.ui.com/unifi/firmware/UGWXG/4.4.50.5272479/UGWXG.v4.4.50.5272479.tar
-- 'https://dl.ubnt.com/firmwares/edgemax/EdgeSwitch/v1.9.1/ESGH.v1.9.1-rc.1.5272014.stk '
+- https://dl.ubnt.com/firmwares/edgemax/EdgeSwitch/v1.9.1/ESGH.v1.9.1-rc.1.5272014.stk
 - https://dl.ubnt.com/firmwares/edgemax/EdgeSwitch/v1.9.1/ESWH.v1.9.1-rc.1.5272009.stk
 - https://dl.ubnt.com/firmwares/edgemax/EdgeSwitch/v1.9.1/ESGH.v1.9.1-rc.1-lite.5272024.stk
 - https://dl.ubnt.com/firmwares/edgemax/EdgeSwitch/v1.9.1/ESWH.v1.9.1-rc.1-lite.5272018.stk
@@ -2296,7 +2231,6 @@
 - https://dl.ui.com/unifi/firmware/USMULT/4.0.80.10875/US.MULT.4.0.80.10875.200111.2358.bin
 - https://dl.ui.com/firmwares/ufiber/UF-OLT.v4.1.1.2782.200103.1215.tar
 - https://discovery.ubncloud.com/WiFiman%20Desktop-0.2.1.AppImage
-- https://apps.apple.com/cz/app/wifiman-desktop/id1482391803
 - https://discovery.ubncloud.com/WiFiman%20Desktop%20Setup%200.2.1.exe
 - https://dl.ui.com/firmwares/airCube/v2.6.2/ACB.ar934x.v2.6.2.697ea73.191217.1539.bin
 - https://dl.ui.com/firmwares/edgemax/v2.0.8/ER-e50.v2.0.8.5247496.tar
@@ -2413,8 +2347,6 @@
 - https://dl.ui.com/unifi/5.11.48-0023c8f3bf/UniFi.pkg
 - https://dl.ui.com/unifi/5.11.48-0023c8f3bf/unifi_sysvinit_all.deb
 - https://dl.ui.com/unifi/5.11.48-0023c8f3bf/unifi_sh_api
-- https://github.com/ubiquiti/eot-controller/releases
-- https://drive.google.com/open?id=10C8kjkBC0dKTUv9fG_0M5p5-bGxCFIIX
 - https://dl.ui.com/unifi/5.11.47/UniFi-installer.exe
 - https://dl.ui.com/unifi/5.11.47/UniFi.pkg
 - https://dl.ui.com/unifi/5.11.47/unifi_sysvinit_all.deb
@@ -2481,7 +2413,6 @@
 - https://dl.ui.com/unifi/cloudkey/firmware/UCK/UCK.mtk7623.v1.0.11.7df68cf.190809.2115.bin
 - https://dl.ui.com/unifi/cloudkey/firmware/UCKG2/UCKG2.apq8053.v1.0.11.7df68cf.190809.2102.bin
 - https://dl.ui.com/unifi/cloudkey/firmware/UCKP/UCKP.apq8053.v1.0.11.7df68cf.190809.2113.bin
-- https://github.com/ubiquiti/eot-controller/releases/tag/1.5.8
 - https://dl.ui.com/unifi/5.10.27/UniFi-installer.exe
 - https://dl.ui.com/unifi/5.10.27/UniFi.pkg
 - https://dl.ui.com/unifi/5.10.27/unifi_sysvinit_all.deb
@@ -2612,11 +2543,9 @@
 - https://dl.ui.com/unifi/5.10.25/UniFi.pkg
 - https://dl.ui.com/unifi/5.10.25/unifi_sysvinit_all.deb
 - https://dl.ui.com/unifi/5.10.25/unifi_sh_api
-- https://unms.com
 - https://dl.ui.com/unifi/cloudkey/firmware/UCK/UCK.mtk7623.v1.0.6.feaba2c.190614.1553.bin
 - https://dl.ui.com/unifi/cloudkey/firmware/UCKG2/UCKG2.apq8053.v1.0.6.feaba2c.190614.1540.bin
 - https://dl.ui.com/unifi/cloudkey/firmware/UCKP/UCKP.apq8053.v1.0.6.feaba2c.190614.1542.bin
-- https://protect.ui.com
 - https://dl.ubnt.com/firmwares/ufiber/UF-OLT.v3.1.0.1579.190104.0734.tar
 - https://dl.ubnt.com/firmwares/ufiber/UF-OLT.v3.0.0.1113.180820.0807.tar
 - https://dl.ubnt.com/firmwares/ufiber/UF_NANOG.v3.0.0.180813.1303.bin
@@ -2631,6 +2560,3 @@
 - https://dl.ubnt.com/firmwares/UFiber/UF-Nano/v2.0.1/UF_NANOG.v2.0.1.180205.1204.bin
 - https://dl.ubnt.com//firmwares/ufiber/UF_LOCO.v2.0.1.180205.1205.bin
 - https://dl.ubnt.com/firmwares/UFiber/UF-OLT/v1.1.0/OLT.recovery.1.1.0.5055308.180122.0341.ed83a5d40.img
-- https://drive.google.com/open?id=0BwHKXNHD5BGmd0lnRkU2TnZHa1k
-- https://drive.google.com/open?id=1S_PG3Rwar2nVjB-gDR3NAm7RU5a_FH-G
-- https://drive.google.com/open?id=1Yt1rFkR2k1E4b9r1qygzxfap2BDF8LBl
