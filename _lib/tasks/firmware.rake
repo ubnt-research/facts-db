@@ -6,7 +6,7 @@ RELEASES_URL = 'https://community.ui.com/RELEASES'
 GRAPHQL_ENDPOINT = 'https://community.svc.ui.com/graphql'
 MAX_LIMIT_SIZE = 100
 
-FirmwarePage = Struct.new(:id, :title, :slug, :version, :stage)
+FirmwarePage = Struct.new(:id, :title, :slug, :version, :stage, :links, :type, :tags, :group_id, :content)
 
 
 # Star Wars API example wrapper
@@ -76,6 +76,18 @@ query (
       type
       title
       version
+      groupId
+      links {
+        url
+      }   
+      content {
+        type
+        ... on AttachmentsContent {
+          files {
+            url
+          } 
+        }     
+      }   
       stage
       tags
       betas
@@ -83,73 +95,9 @@ query (
       isFeatured
       isLocked
       hasUiEngagement
-      stats {
-        comments
-        views
-        __typename
-      }
       createdAt
       lastActivityAt
-      updatedAt
-      userStatus {
-        isFollowing
-        lastViewedAt
-        reported
-        vote
-        __typename
-      }
-      author {
-        id
-        username
-        title
-        slug
-        avatar {
-          color
-          content
-          image
-          __typename
-        }
-        isEmployee
-        registeredAt
-        lastOnlineAt
-        groups
-        showOfficialBadge
-        canBeMentioned
-        canViewProfile
-        canStartConversationWith
-        __typename
-        stats {
-          questions
-          answers
-          solutions
-          comments
-          stories
-          score
-          __typename
-        }
-        __typename
-      }
-      publishedAs {
-        id
-        username
-        title
-        slug
-        avatar {
-          color
-          content
-          image
-          __typename
-        }
-        isEmployee
-        registeredAt
-        lastOnlineAt
-        groups
-        showOfficialBadge
-        canBeMentioned
-        canViewProfile
-        canStartConversationWith
-        __typename
-      }
+      updatedAt      
       __typename
     }
     pageInfo {
@@ -166,14 +114,17 @@ query (
 
   results = []
 
-  10.times do |i|
+  length_measure = UbiquityGraphAPI::Client.query(RELEASES_QUERY, variables: {
+    limit: MAX_LIMIT_SIZE,
+  })
+  PAGES = length_measure.data.to_h['releases']['totalCount'] % MAX_LIMIT_SIZE
+  PAGES.times do |i|
     page = UbiquityGraphAPI::Client.query(RELEASES_QUERY, variables: {
       limit: MAX_LIMIT_SIZE,
       offset: i *  MAX_LIMIT_SIZE,
-      tags: nil
     })
     page.data.to_h['releases']['items'].each do |release|
-      result = FirmwarePage.new(release['id'], release['title'], release['slug'], release['version'], release['stage'])
+      result = FirmwarePage.new(release['id'], release['title'], release['slug'], release['version'], release['stage'], release['links'], release['type'], release['tags'], release['groupId'], release['content'])
       results  << result
     end
   end
